@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption - Login & Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Pet Adoption</h1>
+        </div>
+    </header>
+
+    <!-- Home Section (Login and Register) -->
+    <section id="home" class="home-section">
+        <div class="hero-content">
+            <h2>Welcome to the Pet Adoption Center</h2>
+            <p>Find your new furry friend today!</p>
+            <button onclick="window.location.href='view-adopt-pet.html'">View Pets</button>
+        </div>
+
+        <!-- Login and Register Forms -->
+        <div class="forms">
+            <div id="login-form" class="form">
+                <h3>Login</h3>
+                <form id="login">
+                    <input type="email" id="login-email" placeholder="Email" required>
+                    <input type="password" id="login-password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+            <div id="register-form" class="form">
+                <h3>Register</h3>
+                <form id="register">
+                    <input type="text" id="register-username" placeholder="Username" required>
+                    <input type="email" id="register-email" placeholder="Email" required>
+                    <input type="password" id="register-password" placeholder="Password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

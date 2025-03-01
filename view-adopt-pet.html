@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View and Adopt Pets</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Pet Adoption</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login-register.html">Login/Register</a></li>
+                <li><a href="view-adopt-pet.html">View Pets</a></li>
+                <li><a href="payment.html">Payment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- View Pets Section -->
+    <section id="pets" class="pets-section">
+        <h2>Available Pets for Adoption</h2>
+        <div class="pets-container" id="pets-container">
+            <!-- Pet cards will be added here dynamically -->
+        </div>
+    </section>
+
+    <!-- Adoption Request Section -->
+    <section id="adopt" class="adopt-section">
+        <h2>Adopt a Pet</h2>
+        <div class="adopt-form">
+            <label for="pet-id">Choose a Pet to Adopt:</label>
+            <select id="pet-id">
+                <!-- Options will be filled dynamically -->
+            </select>
+            <button onclick="submitAdoptionRequest()">Submit Request</button>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
